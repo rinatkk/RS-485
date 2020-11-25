@@ -1,0 +1,251 @@
+###############################################################################
+#
+# IAR ELF Linker V7.80.4.12462/W32 for ARM                26/Aug/2020  04:25:51
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\RS_485\205\RS485_TEST_universal_RX\Debug\Exe\RS485_TEST.out
+#    Map file     =  
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\RS_485\205\RS485_TEST_universal_RX\Debug\List\RS485_TEST.map
+#    Command line =  
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\RS_485\205\RS485_TEST_universal_RX\Debug\Obj\M0_Startup.o
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\RS_485\205\RS485_TEST_universal_RX\Debug\Obj\main.o
+#        -o
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\RS_485\205\RS485_TEST_universal_RX\Debug\Exe\RS485_TEST.out
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\RS_485\205\RS485_TEST_universal_RX\Debug\List\RS485_TEST.map
+#        --config
+#        C:\Users\1978\Desktop\HOME-VERS-HOME\RS_485\205\RS485_TEST_universal_RX\RS485_TEST.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x08003fff] { ro };
+"P2":  place in [from 0x20000800 to 0x200017ff] { rw, block CSTACK, block HEAP };
+
+  Section          Kind        Address    Size  Object
+  -------          ----        -------    ----  ------
+"A0":                                     0xc0
+  .intvec          ro code  0x08000000    0xc0  M0_Startup.o [1]
+                          - 0x080000c0    0xc0
+
+"P1", part 1 of 2:                         0x0
+  .rodata          const    0x080000c0     0x0  zero_init3.o [4]
+
+Absolute sections:                        0x10
+  .rodata          const    0x08000200    0x10  main.o [1]
+                          - 0x08000210    0x10
+
+"P1", part 2 of 2:                      0x152e
+  .text            ro code  0x08000210  0x1424  main.o [1]
+  .text            ro code  0x08001634    0x3c  zero_init3.o [4]
+  .text            ro code  0x08001670    0x28  data_init.o [4]
+  .iar.init_table  const    0x08001698    0x10  - Linker created -
+  .text            ro code  0x080016a8    0x1a  cmain.o [4]
+  .text            ro code  0x080016c2     0x4  low_level_init.o [3]
+  .text            ro code  0x080016c6     0x8  exit.o [3]
+  .text            ro code  0x080016ce     0x2  M0_Startup.o [1]
+  .text            ro code  0x080016d0     0xa  cexit.o [4]
+  .text            ro code  0x080016da     0x2  M0_Startup.o [1]
+  .text            ro code  0x080016dc    0x14  exit.o [5]
+  .text            ro code  0x080016f0     0xc  cstartup_M.o [4]
+  .text            ro code  0x080016fc     0x8  M0_Startup.o [1]
+  .text            ro code  0x08001704     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001706     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001708     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800170a     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800170c     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800170e     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001710     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001712     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001714     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001716     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001718     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800171a     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800171c     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800171e     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001720     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001722     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001724     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001726     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001728     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800172a     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800172c     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800172e     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001730     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001732     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001734     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001736     0x2  M0_Startup.o [1]
+  .text            ro code  0x08001738     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800173a     0x2  M0_Startup.o [1]
+  .text            ro code  0x0800173c     0x2  M0_Startup.o [1]
+                          - 0x0800173e  0x152e
+
+"P2", part 1 of 2:                       0x228
+  .bss             zero     0x20000800   0x204  main.o [1]
+  .bss             zero     0x20000a04     0xc  main.o [1]
+  .bss             zero     0x20000a10     0x4  main.o [1]
+  .bss             zero     0x20000a14     0x4  main.o [1]
+  .bss             zero     0x20000a18     0x4  main.o [1]
+  .bss             zero     0x20000a1c     0x2  main.o [1]
+  .bss             zero     0x20000a1e     0x2  main.o [1]
+  .bss             zero     0x20000a20     0x2  main.o [1]
+  .bss             zero     0x20000a22     0x2  main.o [1]
+  .bss             zero     0x20000a24     0x1  main.o [1]
+  .bss             zero     0x20000a25     0x1  main.o [1]
+  .bss             zero     0x20000a26     0x1  main.o [1]
+                          - 0x20000a27   0x227
+
+"P2", part 2 of 2:                       0x200
+  CSTACK                    0x20000a28   0x200  <Block>
+    CSTACK         uninit   0x20000a28   0x200  <Block tail>
+                          - 0x20000c28   0x200
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x227:
+          0x20000800  0x227
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data  ro data
+                                                  (abs)
+    ------            -------  -------  -------  -------
+C:\Users\1978\Desktop\HOME-VERS-HOME\RS_485\205\RS485_TEST_universal_RX\Debug\Obj: [1]
+    M0_Startup.o          262
+    main.o              5 156               551       16
+    ----------------------------------------------------
+    Total:              5 418               551       16
+
+command line: [2]
+    ----------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                  8
+    low_level_init.o        4
+    ----------------------------------------------------
+    Total:                 12
+
+rt6M_tl.a: [4]
+    cexit.o                10
+    cmain.o                26
+    cstartup_M.o           12
+    data_init.o            40
+    zero_init3.o           60
+    ----------------------------------------------------
+    Total:                148
+
+shb_l.a: [5]
+    exit.o                 20
+    ----------------------------------------------------
+    Total:                 20
+
+    Linker created                  16      512
+--------------------------------------------------------
+    Grand Total:        5 598       16    1 063       16
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x08001698          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x080016a8          --   Gb  - Linker created -
+?main                   0x080016a9         Code  Gb  cmain.o [4]
+Button_Func             0x0800115d   0x92  Code  Gb  main.o [1]
+CFG_DEF                 0x080013b5  0x1b8  Code  Gb  main.o [1]
+CFG_LOAD                0x08001581   0x14  Code  Gb  main.o [1]
+CRC32                   0x0800024f   0x14  Code  Gb  main.o [1]
+CRC8                    0x08000239   0x16  Code  Gb  main.o [1]
+CSTACK$$Base            0x20000a28          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000c28          --   Gb  - Linker created -
+FLASH_CLEAR             0x08001305   0x72  Code  Gb  main.o [1]
+FLASH_WRITE             0x08001295   0x68  Code  Gb  main.o [1]
+Func_0                  0x08001015  0x112  Code  Gb  main.o [1]
+HardFault_Handler       0x080015d1    0x4  Code  Gb  main.o [1]
+INF                     0x08000200   0x10  Data  Lc  main.o [1]
+INIT                    0x0800137f   0x14  Code  Gb  main.o [1]
+MODE                    0x08001377    0x8  Code  Gb  main.o [1]
+MST                     0x08000227   0x12  Code  Gb  main.o [1]
+MSTR                    0x20000a24    0x1  Data  Gb  main.o [1]
+NMI_Handler             0x080015cd    0x4  Code  Gb  main.o [1]
+NVIC_IRQ_ON             0x08000211   0x16  Code  Gb  main.o [1]
+PORT_CFG                0x0800037d  0xa54  Code  Gb  main.o [1]
+PendSV_Handler          0x080015d9    0x4  Code  Gb  main.o [1]
+RCC_CFG                 0x08000263   0xf2  Code  Gb  main.o [1]
+Region$$Table$$Base     0x08001698          --   Gb  - Linker created -
+Region$$Table$$Limit    0x080016a8          --   Gb  - Linker created -
+SVC_Handler             0x080015d5    0x4  Code  Gb  main.o [1]
+Stat                    0x20000a18    0x4  Data  Gb  main.o [1]
+SysTick_Handler         0x080015dd   0x16  Code  Gb  main.o [1]
+TIM_CFG                 0x08001205   0x88  Code  Gb  main.o [1]
+Tx_Data                 0x08001135   0x18  Code  Gb  main.o [1]
+U1_RX1                  0x20000a22    0x2  Data  Gb  main.o [1]
+U1_RX2                  0x20000a14    0x4  Data  Gb  main.o [1]
+U1_TX1                  0x20000a20    0x2  Data  Gb  main.o [1]
+U1_TX2                  0x20000a10    0x4  Data  Gb  main.o [1]
+UART1_Handler           0x08000ecd  0x132  Code  Gb  main.o [1]
+UART_CFG                0x08000e09   0x7c  Code  Gb  main.o [1]
+UART_TX                 0x08000e8d   0x28  Code  Gb  main.o [1]
+UR                      0x20000800  0x204  Data  Gb  main.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x200017ff         Data  Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000800         Data  Gb  command line/config [2]
+__cmain                 0x080016a9         Code  Gb  cmain.o [4]
+__exit                  0x080016dd   0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x08001671   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x080016f1         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x08001635   0x3c  Code  Gb  zero_init3.o [4]
+__low_level_init        0x080016c3    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  M0_Startup.o [1]
+_call_main              0x080016b5         Code  Gb  cmain.o [4]
+_exit                   0x080016d1         Code  Gb  cexit.o [4]
+_main                   0x080016bf         Code  Gb  cmain.o [4]
+data_rx                 0x20000a25    0x1  Data  Gb  main.o [1]
+data_txrx               0x20000a04    0xc  Data  Gb  main.o [1]
+exit                    0x080016c7    0x8  Code  Gb  exit.o [3]
+main                    0x080015f3   0x34  Code  Gb  main.o [1]
+slave_addr              0x20000a26    0x1  Data  Gb  main.o [1]
+t_rx                    0x20000a1c    0x2  Data  Gb  main.o [1]
+t_sw                    0x20000a1e    0x2  Data  Gb  main.o [1]
+
+
+[1] = C:\Users\1978\Desktop\HOME-VERS-HOME\RS_485\205\RS485_TEST_universal_RX\Debug\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  5 598 bytes of readonly  code memory
+     16 bytes of readonly  data memory (+ 16 absolute)
+  1 063 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
